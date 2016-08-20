@@ -9,9 +9,10 @@ Responsible DSWG Members:
 + John Huynh
 + Saniya Jesupaul
 + Holly Davis
++ Brian Smith
 + Jude Calvillo
 
-#### Status, as of August 10, 2016:
+#### Status, as of August 20, 2016:
 
 + Prompts were verified by the CA DOJ's OpenJustice team, and we're now in regular contact.
 + [Prompt #1 pretty much complete (Anonymous Analyst) >>](https://git.io/v64kG)
@@ -31,5 +32,5 @@ Responsible DSWG Members:
 
 4. Statewide, what contextual and ethnic factors best predict the arrest of juveniles for battery, specifically?
 
-5. For resource allocation prompt: ~. predictors to crime rate (i.e. not necessarily optimization; just a first, exploratory step, probably via LM)
+5. For resource allocation prompt: ~. predictors to statewide crime rate (i.e. not necessarily optimization; just a first, exploratory step, probably via LM)
 
