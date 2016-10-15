@@ -55,7 +55,9 @@ plot_ethnic <- ggplot(cty_ethnic[cty_ethnic$arrest_year %in% "2014",], aes(x = r
 2014 Only (test year)")
 
 ## Print plot
-plot_ethnic
+suppressWarnings(
+    print(plot_ethnic)
+)
 
 ## Stacked bar chart: ethnic breakdown of arrests, stacked between counties.
 plot_ethnic2 <- ggplot(cty_ethnic[cty_ethnic$arrest_year %in% "2014",], aes(x = race_or_ethnicity, y = total, fill = county)) + 
@@ -67,7 +69,9 @@ plot_ethnic2 <- ggplot(cty_ethnic[cty_ethnic$arrest_year %in% "2014",], aes(x = 
 2014 Only (test year)")
 
 ## Print plot
-plot_ethnic2
+suppressWarnings(
+    print(plot_ethnic2)
+)
 
 ## Now, let's preview the population data
 dim(dat_pop)
@@ -107,6 +111,7 @@ dat_joined <- dat_joined[!(dat_joined$county %in% "Alpine" |
 head(dat_joined)
 tail(dat_joined)
 
+### Plot Arrest Rates by County for a Single Year (2014)...
 ## Let's remove post-join arrest total NAs from our analysis...for now.
 dat_joined <- dat_joined[!is.na(dat_joined$total),]
 
@@ -124,7 +129,7 @@ plot_ethnic_norm <- ggplot(dat_joined[!(dat_joined$race_or_ethnicity %in% "Nativ
 -2014 Only-")
 
 ## Print plot
-plot_ethnic_norm
+suppressWarnings(print(plot_ethnic_norm))
 
 #### Looping approach (Please don't hate me, RNG! I'll vectorize asap :)) ####
 
@@ -188,13 +193,16 @@ dat_stats_test <- dat_stats[dat_stats$year %in% "2014" & dat_stats$race_or_ethni
 shapiro.test(dat_stats_test$eth_arrest_rate)
 
 ## Plot the density w/outliers
-plot(density(dat_stats_test$eth_arrest_rate), 
-     main = "Arrest Rate Density for Hispanics in 2014\r
+suppressWarnings(
+    plot(density(dat_stats_test$eth_arrest_rate), main = "Arrest Rate Density for Hispanics in 2014\r
 (test ethnicity and year)")
+)
 
 ## Plot vs. purely normal distribution
-qqnorm(dat_stats_test$eth_arrest_rate, main = "Arrest Rate Observations for Hispanics in 2014\r
+suppressWarnings(
+    qqnorm(dat_stats_test$eth_arrest_rate, main = "Arrest Rate Observations for Hispanics in 2014\r
 vs. Theoretical Norm Estimates")
+)
 qqline(dat_stats_test$eth_arrest_rate)
 
 ## Subset to "Other," 2014 (entire dataset is already subsetted to juveniles)
@@ -205,13 +213,17 @@ dat_stats_test <- dat_stats[dat_stats$year %in% "2014" & dat_stats$race_or_ethni
 shapiro.test(dat_stats_test$eth_arrest_rate)
 
 ## Plot the density w/outliers
-plot(density(dat_stats_test$eth_arrest_rate), 
+suppressWarnings(
+    plot(density(dat_stats_test$eth_arrest_rate), 
      main = "Arrest Rate Density for OTHER in 2014\r
 (test ethnicity and year)")
-
+)
+    
 ## Plot vs. purely normal distribution
-qqnorm(dat_stats_test$eth_arrest_rate, main = "Arrest Rate Observations for OTHER in 2014\r
+suppressWarnings(
+    qqnorm(dat_stats_test$eth_arrest_rate, main = "Arrest Rate Observations for OTHER in 2014\r
 vs. Theoretical Norm Estimates")
+)
 qqline(dat_stats_test$eth_arrest_rate)
 
 ## Upload full stats DF to Azure ML and save to local csv.
@@ -224,18 +236,15 @@ write.csv(dat_stats, "juv-ethnic-arrests_outliers_2005-2014.csv", row.names = F)
 
 ## ^Please disregard the Azure ML upload status messages the system produces...
 
-# ## Note to self: Window function / vectorization approach (for practice! - not done yet)
-# 
-# prob_fun <- function(x){
-#     round(pnorm(x, mean(x, na.rm = T), sd(x, na.rm = T), lower.tail = FALSE, log.p = FALSE), 5)
-# }
-# zscore_fun <- function(x){
-#     round(qnorm(x$rate_prob, lower.tail = FALSE, log.p = FALSE), 5)
-# }
-# 
-# dat_wstats <- aggregate(eth_arrest_rate ~ year + county, data = dat_joined, FUN = prob_fun, na.action = "na.pass")
-# 
-# #dat_wstats
-# names(dat_wstats)[3] <- "rate_prob"
-# 
-# dat_wstats
+dat_stats[dat_stats$county %in% "Los Angeles" & dat_stats$race_or_ethnicity %in% "Other",]
+
+dat_stats[dat_stats$county %in% "San Francisco" & dat_stats$race_or_ethnicity %in% "Other",]
+
+dat_pop[dat_pop$county %in% "San Francisco" & (dat_pop$race %in% "Other" | dat_pop$race %in% "All Combined") &
+        dat_pop$gender %in% "All Combined" & dat_pop$age_group %in% "Juvenile",]
+
+head(dat_joined[dat_joined$county %in% "San Francisco",], 20)
+
+head(dat_joined[dat_joined$county %in% "Los Angeles",])
+
+write.csv
