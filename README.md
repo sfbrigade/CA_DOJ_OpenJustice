@@ -10,6 +10,7 @@ Responsible DSWG Members:
 + John Huynh
 + Saniya Jesupaul
 + Brian Smith
++ Biljana Rolih
 + Jude Calvillo
 
 #### Status, as of September 14, 2016:
