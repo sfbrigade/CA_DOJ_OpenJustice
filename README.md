@@ -16,8 +16,8 @@ Responsible DSWG Members:
 
 + Prompts were verified by the CA DOJ's OpenJustice team, and we're now in regular contact.
 + [Prompt #1 pretty much complete (Anonymous Analyst) >>](https://git.io/v64kG)
-+ [Prompt #2 in draft stage (Catherine Zhang) >>](https://git.io/v64k3)
-+ [Prompt #3 in progress but with important questions (Matt Mollison) >>](#)
++ [Prompt #2 in draft stage (Catherine Zhang) >>](https://git.io/viOWB)
++ [Prompt #3 in progress but with important questions (Matt Mollison) >>](https://git.io/viK89)
 + [Prompt #5 in progress (John Huynh and Saniya Jesupaul) >>](https://git.io/virtR)
 + [Numerous outside data sources being joined, explored, and shared (Brian Smith) >>](https://numeracy.co/projects/1ovzvErSiG9/all-features)
 + Continuing to gather additional data/features for all predictive modeling prompts.
