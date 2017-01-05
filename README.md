@@ -10,18 +10,18 @@ Responsible DSWG Members:
 + John Huynh
 + Saniya Jesupaul
 + Brian Smith
-+ Biljana Rolih
++ Biljana Rolih, Ph.D.
 + Jude Calvillo
 
-#### Status, as of September 14, 2016:
+#### Status, as of January 4, 2017:
 
-+ Prompts were verified by the CA DOJ's OpenJustice team, and we're now in regular contact.
++ We recently touched base with the DoJ's new, dedicated OpenJustice team, Eric Giannella, Ph.D., Damian Ortellado, and of course, Justin Erlich (Special Assistant Attorney General). We're now moving toward integrating some of our findings into the DoJ's data stories and getting additional statistical -and visualization- prompts from the DoJ team.
 + [Prompt #1 pretty much complete (Anonymous Analyst) >>](https://git.io/v64kG)
-+ [Prompt #2 in draft stage (Catherine Zhang) >>](https://git.io/viOWB)
++ [Prompt #2 hypothesis tests being extended to all years and top BC codes (Biljana Rolih, Ph.D.)](https://github.com/billiescodes/project_DOJ/blob/master/README.md)  
+    - [Initial exploration and hypothesis tests (Catherine Zhang) >>](https://git.io/viOWB)  
 + [Prompt #3 in progress but with important questions (Matt Mollison) >>](https://git.io/viK89)
-+ [Prompt #5 in progress (John Huynh and Saniya Jesupaul) >>](https://git.io/virtR)
-+ [Numerous outside data sources being joined, explored, and shared (Brian Smith) >>](https://numeracy.co/projects/1ovzvErSiG9/all-features)
-+ Continuing to gather additional data/features for all predictive modeling prompts.
++ Analysis/support of Prompt #5 has been deprecated, as it doesn't seem we'll be able to improve upon the state of the art. 
+    - However, if one is interested in [our initial modeling attempts, by John Huynh and Saniya Jesupaul, they can see those here >>](https://git.io/virtR)
 
 #### The Prompts
 
