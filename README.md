@@ -12,10 +12,14 @@ Responsible DSWG Members:
 + Brian Smith
 + Biljana Rolih, Ph.D.
 + Jude Calvillo
++ Alex Novet
++ Nitya Subramanian
 
-#### Status, as of January 4, 2017:
+#### Status, as of January 25, 2017:
 
-+ We recently touched base with the DoJ's new, dedicated OpenJustice team, Eric Giannella, Ph.D., Damian Ortellado, and of course, Justin Erlich (Special Assistant Attorney General). We're now moving toward integrating some of our findings into the DoJ's data stories and getting additional statistical -and visualization- prompts from the DoJ team.
++ We were recently informed of some very interesting data coming down the pipeline (gun sales and justice department transactions, post-arrest), and the team has already formulated some great hypotheses to test upon that data.
+* We will be having another call with OpenJustice's head of research, Eric Giannella, Ph.D., in the coming weeks, to see how realistic it would be to execute our latest batch of hypothesis tests, given state regulations/policy, as well as to get his insights into the sociological issues involved.
++ We're continuing to move toward integrating some of our findings into the DoJ's data stories and getting additional statistical -and visualization- prompts from the DoJ team.
 + [Prompt #1 pretty much complete (Anonymous Analyst) >>](https://git.io/v64kG)
 + [Prompt #2 hypothesis tests being extended to all years and top BC codes (Biljana Rolih, Ph.D.)](https://github.com/billiescodes/project_DOJ/blob/master/README.md)  
     - [Initial exploration and hypothesis tests (Catherine Zhang) >>](https://git.io/viOWB)  
@@ -23,7 +27,7 @@ Responsible DSWG Members:
 + Analysis/support of Prompt #5 has been deprecated, as it doesn't seem we'll be able to improve upon the state of the art. 
     - However, if one is interested in [our initial modeling attempts, by John Huynh and Saniya Jesupaul, they can see those here >>](https://git.io/virtR)
 
-#### The Prompts
+#### Past Prompts (new prompts coming)
 
 1. Which counties/agencies arrest African American juveniles at a statistically significantly higher rate than that of other counties/agencies?
     - Extending analysis to each ethnic group represented
