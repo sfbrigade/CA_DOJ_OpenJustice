@@ -2,7 +2,7 @@
 ## CA Dept. of Justice OpenJustice Project
 ### Modeling & Hypothesis Testing
 
-Below, members of the [Data Science Working Group](https://github.com/sfbrigade/data-science-wg) have been charged with answering, via inferential statistics, some of the California Department of Justice's inquiries around criminal justice. These more pointed inquiries were inspired by the OpenJustice project's exploratory analyses at [OpenJustice.org](http://wwww.openjustice.org).  
+Below, members of the [Data Science Working Group](https://github.com/sfbrigade/data-science-wg) have been charged with answering, via inferential statistics, some of the California Department of Justice's inquiries around criminal justice. These more pointed inquiries were inspired by the OpenJustice project's exploratory analyses at [OpenJustice.org](https://openjustice.doj.ca.gov/).  
 
 Responsible DSWG Members:
 + Catherine Zhang
